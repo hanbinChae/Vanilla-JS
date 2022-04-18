@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RandomNumberGame</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Random Number Game</h1>
+
+    <!-- form 시작 -->
+    <form class="gameform">
+
+    <div class="set_range">
+        <p class="set_style">Generate a number between 0 and 
+            <input id="guess_range" type="number" min="1" max="40">
+        </p>
+    </div>
+
+   
+        <p>Guess the number: 
+            <input type="number" id="result_number">
+            <input type="submit" value="Play!">
+        </p>
+    </form>
+
+
+
+<!-- 결과물 -->
+    <div id="result_div" class="hidden">
+        <div style="display: inline;">
+            You chose: <a id="num1">num1</a>, the machine chose: <a id="num2">num2</a>.
+        </div>
+        <p class="result_ment set_style">You lost!</p>
+    </div>
+
+    <script src="index.js"></script>
+</body> 
+</html>
