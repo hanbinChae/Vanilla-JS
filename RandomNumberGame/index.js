@@ -15,15 +15,16 @@ function GuessNumberSubmit(even){
     const G = Math.ceil(Math.random()*parseInt(GuessRange));
     const R = parseInt(Result);
     
+    console.log(G,R)
     RESULT_DIV.classList.remove('hidden');
 
-    if(R==G){
-        num1.innerHTML = Result;
-        num2.innerHTML = Math.ceil(Math.random()*parseInt(GuessRange));
+    if(G==R){
+        num1.innerHTML = R;
+        num2.innerHTML = G;
         RESULT_MENT.innerHTML = 'You won!';
     }else{
-        num1.innerHTML = Result;
-        num2.innerHTML = Math.ceil(Math.random()*parseInt(GuessRange));
+        num1.innerHTML = R;
+        num2.innerHTML = G;
         RESULT_MENT.innerHTML = 'You Lost!';
     }
     console.log('num1값'+num1,'num2값'+num2)
