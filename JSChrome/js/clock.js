@@ -1,5 +1,3 @@
- 
-
 function getClock(){
     const date = new Date();
     const hour = String(date.getHours()).padStart(2,"0");
