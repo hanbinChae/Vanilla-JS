@@ -54,4 +54,3 @@ if(savedToDos!=null){
 }else{
     console.log("local storage is null")
 }
-
